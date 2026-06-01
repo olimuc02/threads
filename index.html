@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Threads — Clothing Wishlist</title>
+<style>
+  :root { --accent:#7c5cff; --teal:#4ad7d4; --bg:#0f1115; --card:#1c2029; --line:#2a2f3a; --text:#e7e9ee; --muted:#8b93a3; }
+  * { box-sizing:border-box; margin:0; padding:0; }
+  body {
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    background: radial-gradient(1200px 600px at 80% -10%, #1b1740 0%, transparent 60%),
+                radial-gradient(900px 500px at -10% 10%, #102b2b 0%, transparent 55%), var(--bg);
+    color:var(--text); min-height:100vh; -webkit-font-smoothing:antialiased;
+    display:flex; align-items:center; justify-content:center; padding:24px;
+  }
+  .card { max-width:620px; text-align:center; }
+  .logo {
+    width:96px; height:96px; border-radius:26px; margin:0 auto 22px;
+    background:linear-gradient(135deg,var(--accent),var(--teal));
+    display:grid; place-items:center; font-size:50px;
+    box-shadow:0 14px 40px rgba(0,0,0,.4);
+  }
+  h1 { font-size:38px; letter-spacing:-.8px; margin-bottom:12px; }
+  .tag { color:var(--accent); font-weight:600; font-size:15px; letter-spacing:.4px; text-transform:uppercase; margin-bottom:18px; }
+  p { color:var(--muted); font-size:17px; line-height:1.7; margin-bottom:16px; }
+  .features { display:flex; flex-wrap:wrap; gap:10px; justify-content:center; margin:26px 0; }
+  .chip { background:var(--card); border:1px solid var(--line); border-radius:999px; padding:9px 16px; font-size:14px; }
+  .foot { margin-top:28px; font-size:14px; }
+  .foot a { color:var(--accent); text-decoration:none; }
+  .foot a:hover { text-decoration:underline; }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="logo">🧵</div>
+    <div class="tag">Threads</div>
+    <h1>A calmer way to plan what you buy</h1>
+    <p>
+      Threads is a personal clothing & thrift wishlist. Group what you want into
+      categories like “Denim jeans,” save links and prices, set a budget goal for
+      each item, and check things off as you get them.
+    </p>
+    <div class="features">
+      <span class="chip">🗂️ Organized categories</span>
+      <span class="chip">🎯 Per-item budget goals</span>
+      <span class="chip">⭐ Priorities</span>
+      <span class="chip">📌 Pinterest quick-add</span>
+    </div>
+    <p>
+      Threads runs privately on your own device. The optional Pinterest connection
+      only reads <em>your</em> own boards and pins so you can import them into your list.
+    </p>
+    <div class="foot">
+      <a href="privacy.html">Privacy policy</a>
+    </div>
+  </div>
+</body>
+</html>
